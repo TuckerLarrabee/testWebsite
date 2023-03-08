@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 10px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .search-container input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .search-results {
+    position: absolute;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .search-results li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .search-results li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .background {
+    background-image: url('https://source.unsplash.com/random');
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(3px);
+  }
+  
